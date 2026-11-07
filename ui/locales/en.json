@@ -1,0 +1,12 @@
+{
+  "authInvalidResponse": "Could not verify sign-in for 3D. Retry the connection.",
+  "authMissingOwner": "Could not verify the 3D owner. Retry the connection.",
+  "runtimeIncompatible": "Update GrigDesk core to start the 3D plugin.",
+  "loading": "Loading 3D…",
+  "retry": "Retry",
+  "contextClosed": "The 3D context is closed.",
+  "pendingDroppedTitle": "Order was not sent",
+  "pendingStateErrorTitle": "Could not refresh the 3D library",
+  "pendingStateErrorBody": "Check your connection and retry. Saved requests are unchanged.",
+  "libraryNotReady": "Confirm library availability before submitting the order."
+}

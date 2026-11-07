@@ -1,0 +1,64 @@
+{
+  "id": "studio3d",
+  "api": 1,
+  "name": "3D",
+  "version": "0.1.0",
+  "description": "Создание, библиотека, задания и просмотр трёхмерных моделей.",
+  "category": "dev",
+  "icon": "assets/icon.png",
+  "defaultEnabled": false,
+  "engines": {
+    "grigdesk": ">=0.1.0"
+  },
+  "entrypoints": {
+    "server": "server.mjs",
+    "web": {
+      "dir": "ui",
+      "entry": "panel.js",
+      "background": "background.js",
+      "css": [
+        "panel.css"
+      ],
+      "locales": {
+        "ru": "locales/ru.json",
+        "en": "locales/en.json"
+      }
+    }
+  },
+  "contributes": {
+    "panels": [
+      {
+        "title": "3D",
+        "group": "dock",
+        "order": 30,
+        "hotkey": "Ctrl+Shift+Digit7"
+      }
+    ],
+    "settings": [
+      {
+        "key": "autoImport",
+        "label": "Подтягивать прошлые заказы",
+        "type": "checkbox",
+        "default": true
+      },
+      {
+        "key": "lowDiskGb",
+        "label": "Свободное место, ГБ",
+        "type": "number",
+        "default": 10,
+        "min": 1,
+        "max": 1000,
+        "step": 1
+      },
+      {
+        "key": "libraryDir",
+        "label": "Папка библиотеки",
+        "type": "text",
+        "default": ""
+      }
+    ]
+  },
+  "install": {
+    "npm": []
+  }
+}
